@@ -59,7 +59,7 @@ resource "aws_s3_object" "styles_file" {
   content_type = "text/css"
 }
 
-resource "aws_s3_object" "error_html" {
+resource "aws_s3_object" "error_html_file" {
   bucket = aws_s3_bucket.webbucket.id
   key    = "error.html"
   source = "../error.html"
